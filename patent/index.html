@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Patent Protection | Teraju IP</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#00302c",
+          "on-primary": "#ffffff",
+          "primary-container": "#0d4842",
+          "primary-fixed": "#b7ede4",
+          "primary-fixed-dim": "#9bd1c8",
+          "on-primary-fixed": "#00201d",
+          "on-primary-fixed-variant": "#174f49",
+          "on-primary-container": "#81b6ae",
+          "secondary": "#465f88",
+          "on-secondary": "#ffffff",
+          "secondary-fixed": "#d6e3ff",
+          "tertiary-fixed": "#ffdea5",
+          "tertiary-fixed-dim": "#e9c176",
+          "on-tertiary-fixed": "#261900",
+          "on-surface": "#171c22",
+          "on-surface-variant": "#404947",
+          "surface": "#f8f9ff",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-low": "#f0f4fd",
+          "surface-container": "#eaeef7",
+          "surface-container-high": "#e4e8f1",
+          "surface-container-highest": "#dee3eb",
+          "outline": "#707977",
+          "outline-variant": "#bfc8c6",
+          "background": "#f8f9ff"
+        },
+        borderRadius: {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        fontFamily: {
+          "headline": ["Newsreader", "serif"],
+          "body": ["Inter", "sans-serif"],
+          "label": ["Inter", "sans-serif"]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .serif-italic { font-family: 'Newsreader', serif; font-style: italic; }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-emerald-950/80 backdrop-blur-md shadow-sm dark:shadow-none h-20">
+  <div class="flex justify-between items-center max-w-7xl mx-auto px-6 md:px-8 h-full w-full">
+    <a href="../home_screen_desktop/">
+      <img alt="Teraju IP Logo" class="h-10 w-auto object-contain" src="../assets/teraju-logo.png"/>
+    </a>
+    <div class="hidden md:flex items-center space-x-10">
+      <a class="font-serif serif-italic text-lg tracking-tight text-emerald-900 border-b-2 border-emerald-800 pb-1" href="../home_screen_desktop/">Services</a>
+      <a class="font-serif serif-italic text-lg tracking-tight text-emerald-800/70 hover:text-emerald-950 transition-colors" href="../about_us_desktop/">About</a>
+      <a class="font-serif serif-italic text-lg tracking-tight text-emerald-800/70 hover:text-emerald-950 transition-colors" href="../compare/">Compare</a>
+      <a class="font-serif serif-italic text-lg tracking-tight text-emerald-800/70 hover:text-emerald-950 transition-colors" href="../contact/">Contact</a>
+    </div>
+    <a href="https://wa.me/60123252420" target="_blank" class="bg-primary text-on-primary px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-emerald-900 transition-all duration-300 active:scale-95">
+      Free Consultation
+    </a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="relative pt-32 pb-24 overflow-hidden bg-primary">
+  <div class="max-w-7xl mx-auto px-8 relative z-10">
+    <div class="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full mb-8 border border-white/10">
+      <span class="material-symbols-outlined text-tertiary-fixed text-sm" style="font-variation-settings:'FILL' 1;">lightbulb</span>
+      <span class="text-xs font-label uppercase tracking-widest text-tertiary-fixed font-bold">Innovation Protection</span>
+    </div>
+    <h1 class="font-headline text-7xl lg:text-8xl text-on-primary leading-tight mb-6">
+      Protect What<br/>
+      <span class="serif-italic text-primary-fixed-dim">You Invented.</span>
+    </h1>
+    <p class="text-on-primary-container text-xl max-w-2xl mb-10 leading-relaxed">
+      From local utility patents to full PCT international filings — our team of former MyIPO examiners architects your patent with the precision of those who once evaluated them.
+    </p>
+    <div class="flex flex-wrap gap-4">
+      <a href="https://wa.me/60123252420" target="_blank" class="bg-on-primary text-primary px-8 py-4 rounded-lg font-bold text-lg flex items-center gap-3 hover:bg-primary-fixed transition-colors shadow-xl">
+        Start My Patent Filing
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </a>
+      <a href="#process" class="bg-white/10 text-on-primary border border-white/20 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/20 transition-colors">
+        See Our Process
+      </a>
+    </div>
+  </div>
+  <!-- Background grid -->
+  <div class="absolute inset-0 opacity-5 pointer-events-none">
+    <svg class="h-full w-full" preserveAspectRatio="none" viewBox="0 0 100 100">
+      <defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.1"/></pattern></defs>
+      <rect width="100" height="100" fill="url(#grid)"/>
+    </svg>
+  </div>
+</header>
+
+<!-- What We Handle -->
+<section class="py-24 bg-surface-container-low">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="mb-16">
+      <p class="font-label text-xs uppercase tracking-widest text-outline mb-3">Scope of Service</p>
+      <h2 class="font-headline text-5xl text-primary mb-4">Every Kind of Patent.<br/><span class="serif-italic text-on-primary-fixed-variant">Local to Global.</span></h2>
+      <p class="text-on-surface-variant text-lg max-w-2xl leading-relaxed">
+        We handle the full spectrum of patent applications — from domestic filings with MyIPO to international protection under the Patent Cooperation Treaty (PCT).
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Utility Patent -->
+      <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/20 shadow-sm group hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-on-primary">build</span>
+        </div>
+        <h3 class="font-headline text-2xl text-primary mb-2">Utility Innovation</h3>
+        <p class="font-label text-xs uppercase tracking-widest text-outline mb-4">Local — MyIPO</p>
+        <p class="text-on-surface-variant leading-relaxed text-sm">
+          A Malaysian IP right tailored for incremental improvements, simple inventions, and modifications of existing products or processes. Unlike a full patent, a Utility Innovation (UI) does not require a strict inventive step — making it faster, more affordable, and easier to obtain. Ideal for SMEs and first-time inventors seeking practical, enforceable protection without the complexity of full patent prosecution.
+        </p>
+        <div class="mt-6 pt-6 border-t border-outline-variant/20 space-y-2">
+          <div class="flex items-center gap-2 text-primary text-sm font-semibold">
+            <span class="material-symbols-outlined text-base">schedule</span>
+            Up to 20 years protection (subject to renewal)
+          </div>
+          <div class="flex items-center gap-2 text-on-surface-variant text-sm">
+            <span class="material-symbols-outlined text-base">verified</span>
+            No substantive inventiveness examination
+          </div>
+        </div>
+      </div>
+
+      <!-- Industrial Property -->
+      <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/20 shadow-sm group hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-on-primary">precision_manufacturing</span>
+        </div>
+        <h3 class="font-headline text-2xl text-primary mb-2">Full Patent</h3>
+        <p class="font-label text-xs uppercase tracking-widest text-outline mb-4">Local — MyIPO</p>
+        <p class="text-on-surface-variant leading-relaxed text-sm">
+          The gold standard of IP protection in Malaysia. A full patent requires the invention to be new, involve an inventive step (non-obvious to a skilled person), and be industrially applicable. It undergoes substantive examination — a more rigorous process — but in return delivers higher legal credibility and stronger enforcement power. Exclusive rights to make, use, sell, or license the invention make it the right choice for technologically advanced or high-value innovations.
+        </p>
+        <div class="mt-6 pt-6 border-t border-outline-variant/20 space-y-2">
+          <div class="flex items-center gap-2 text-primary text-sm font-semibold">
+            <span class="material-symbols-outlined text-base">schedule</span>
+            20 years protection (annual renewal)
+          </div>
+          <div class="flex items-center gap-2 text-on-surface-variant text-sm">
+            <span class="material-symbols-outlined text-base">gavel</span>
+            Substantive examination — highest credibility
+          </div>
+        </div>
+      </div>
+
+      <!-- PCT International -->
+      <div class="bg-primary rounded-xl p-8 shadow-sm group hover:shadow-md transition-shadow relative overflow-hidden">
+        <div class="absolute -top-6 -right-6 w-28 h-28 rounded-full bg-white/5"></div>
+        <div class="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-primary-fixed">public</span>
+        </div>
+        <h3 class="font-headline text-2xl text-on-primary mb-2">PCT International</h3>
+        <p class="font-label text-xs uppercase tracking-widest text-primary-fixed mb-4">150+ Countries</p>
+        <p class="text-on-primary-container leading-relaxed text-sm">
+          Secure your invention across more than 150 member countries under the Patent Cooperation Treaty. A single PCT application preserves your priority date while giving you time to assess your target markets before incurring national phase costs.
+        </p>
+        <div class="mt-6 pt-6 border-t border-white/10">
+          <div class="flex items-center gap-2 text-primary-fixed text-sm font-semibold">
+            <span class="material-symbols-outlined text-base">language</span>
+            Global coverage, one filing
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Our Process -->
+<section class="py-24 bg-surface" id="process">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="mb-16">
+      <p class="font-label text-xs uppercase tracking-widest text-outline mb-3">How It Works</p>
+      <h2 class="font-headline text-5xl text-primary mb-4">Our Process</h2>
+      <p class="text-on-surface-variant text-lg max-w-2xl leading-relaxed">
+        A rigorous, client-first workflow designed to maximise the strength and accuracy of every patent we file.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-0">
+
+      <!-- Step 1 -->
+      <div class="relative">
+        <div class="lg:pr-8">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline text-xl font-bold shrink-0">1</div>
+            <div class="hidden lg:block h-px flex-1 bg-outline-variant/40"></div>
+          </div>
+          <div class="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant/20 shadow-sm lg:mr-4">
+            <span class="material-symbols-outlined text-primary text-2xl mb-4 block">handshake</span>
+            <h3 class="font-headline text-xl text-primary mb-2">Pricing Agreement</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              We present our fees transparently upfront. Once you are comfortable with the pricing, we proceed — no hidden charges, no surprises.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="relative mt-6 lg:mt-0">
+        <div class="lg:px-4">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline text-xl font-bold shrink-0">2</div>
+            <div class="hidden lg:block h-px flex-1 bg-outline-variant/40"></div>
+          </div>
+          <div class="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant/20 shadow-sm">
+            <span class="material-symbols-outlined text-primary text-2xl mb-4 block">video_call</span>
+            <h3 class="font-headline text-xl text-primary mb-2">Online Invention Disclosure</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              We conduct a detailed online meeting to fully understand your invention. This prevents misinterpretation on our end and makes the subsequent search and drafting significantly more accurate and efficient.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="relative mt-6 lg:mt-0">
+        <div class="lg:px-4">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline text-xl font-bold shrink-0">3</div>
+            <div class="hidden lg:block h-px flex-1 bg-outline-variant/40"></div>
+          </div>
+          <div class="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant/20 shadow-sm">
+            <span class="material-symbols-outlined text-primary text-2xl mb-4 block">search</span>
+            <h3 class="font-headline text-xl text-primary mb-2">Novelty Search</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              A comprehensive prior art search across global patent databases. You receive a detailed novelty search report — completed within <span class="font-semibold text-primary">1 week</span> — giving a clear picture of your invention's patentability.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="relative mt-6 lg:mt-0">
+        <div class="lg:pl-4">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline text-xl font-bold shrink-0">4</div>
+          </div>
+          <div class="bg-surface-container-lowest rounded-xl p-6 border border-outline-variant/20 shadow-sm">
+            <span class="material-symbols-outlined text-primary text-2xl mb-4 block">edit_document</span>
+            <h3 class="font-headline text-xl text-primary mb-2">Drafting & Filing</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              Our senior agents draft airtight claims and specifications over <span class="font-semibold text-primary">3 weeks</span>, then file your complete application within <span class="font-semibold text-primary">1 week</span>. Your priority date is secured from day of filing.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="py-24 bg-surface-container-low">
+  <div class="max-w-7xl mx-auto px-8">
+
+    <div class="mb-16">
+      <p class="font-label text-xs uppercase tracking-widest text-outline mb-3">Transparent Fees</p>
+      <h2 class="font-headline text-5xl text-primary mb-4">Clear Pricing.<br/><span class="serif-italic text-on-primary-fixed-variant">No Surprises.</span></h2>
+      <p class="text-on-surface-variant text-lg max-w-2xl leading-relaxed">
+        Our fees are structured by stage so you stay in full control of your budget. Talk to our team for a precise quote tailored to your invention's complexity.
+      </p>
+    </div>
+
+    <!-- Pricing cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+
+      <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/20 shadow-sm">
+        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-primary text-xl">search</span>
+        </div>
+        <p class="font-label text-xs uppercase tracking-widest text-outline mb-2">Stage 1</p>
+        <h3 class="font-headline text-2xl text-primary mb-1">Patent Search</h3>
+        <p class="text-on-surface-variant text-sm mb-6">Comprehensive novelty search with full prior art report.</p>
+        <div class="mt-auto">
+          <p class="font-headline text-4xl text-primary">RM 1,500</p>
+          <p class="font-label text-xs text-outline mt-1">Fixed fee · 1 week delivery</p>
+        </div>
+      </div>
+
+      <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/20 shadow-sm">
+        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-primary text-xl">edit_document</span>
+        </div>
+        <p class="font-label text-xs uppercase tracking-widest text-outline mb-2">Stage 2</p>
+        <h3 class="font-headline text-2xl text-primary mb-1">Patent Drafting</h3>
+        <p class="text-on-surface-variant text-sm mb-6">Full specification, claims, and abstract drafted by former MyIPO examiners.</p>
+        <div class="mt-auto">
+          <p class="font-headline text-4xl text-primary">From RM 5,500</p>
+          <p class="font-label text-xs text-outline mt-1">Varies by complexity · 3 weeks</p>
+        </div>
+      </div>
+
+      <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/20 shadow-sm">
+        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-primary text-xl">send</span>
+        </div>
+        <p class="font-label text-xs uppercase tracking-widest text-outline mb-2">Stage 3</p>
+        <h3 class="font-headline text-2xl text-primary mb-1">Patent Filing</h3>
+        <p class="text-on-surface-variant text-sm mb-6">Official submission to MyIPO. Priority date secured upon filing.</p>
+        <div class="mt-auto">
+          <p class="font-headline text-4xl text-primary">From RM 2,500</p>
+          <p class="font-label text-xs text-outline mt-1">Varies by type · 1 week</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Expedited examination callout -->
+    <div class="bg-primary rounded-xl p-8 md:p-10 relative overflow-hidden">
+      <div class="absolute -top-10 -right-10 w-48 h-48 rounded-full bg-white/5"></div>
+      <div class="absolute -bottom-8 -left-8 w-36 h-36 rounded-full bg-white/5"></div>
+      <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        <div class="md:col-span-2">
+          <div class="inline-flex items-center gap-2 bg-tertiary-fixed/20 px-3 py-1.5 rounded-full mb-4">
+            <span class="material-symbols-outlined text-tertiary-fixed-dim text-sm" style="font-variation-settings:'FILL' 1;">bolt</span>
+            <span class="font-label text-xs uppercase tracking-widest text-tertiary-fixed-dim font-bold">Recommended for Speed</span>
+          </div>
+          <h3 class="font-headline text-3xl text-on-primary mb-3">Expedited Examination</h3>
+          <p class="text-on-primary-container leading-relaxed mb-4">
+            Normal examination can take years. Expedited examination fast-tracks your application through MyIPO, cutting the timeline <span class="font-semibold text-primary-fixed">dramatically</span>. For inventors who cannot afford to wait, this is the clear choice.
+          </p>
+          <div class="flex flex-wrap gap-6">
+            <div>
+              <p class="font-label text-xs uppercase tracking-widest text-primary-fixed mb-1">Standard Track</p>
+              <p class="font-headline text-2xl text-on-primary">Years</p>
+            </div>
+            <div class="w-px bg-white/20 hidden md:block"></div>
+            <div>
+              <p class="font-label text-xs uppercase tracking-widest text-tertiary-fixed-dim mb-1">Expedited Track</p>
+              <p class="font-headline text-2xl text-on-primary">Months</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white/10 rounded-xl p-6 border border-white/10 text-center">
+          <p class="font-label text-xs uppercase tracking-widest text-primary-fixed mb-3">Additional Fee</p>
+          <p class="font-headline text-5xl text-on-primary mb-1">RM 5,600</p>
+          <p class="font-label text-xs text-on-primary-container mb-6">Paid to MyIPO · one-time</p>
+          <a href="https://wa.me/60123252420" target="_blank" class="block bg-tertiary-fixed text-on-tertiary-fixed px-6 py-3 rounded-lg font-bold text-sm hover:bg-tertiary-fixed-dim transition-colors">
+            Opt for Expedited
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="mt-6 flex items-start gap-3 bg-surface-container rounded-xl px-6 py-4 border border-outline-variant/20">
+      <span class="material-symbols-outlined text-outline text-base mt-0.5 shrink-0">info</span>
+      <p class="text-on-surface-variant text-sm leading-relaxed">
+        Prices listed are starting rates. Final fees depend on the nature and complexity of your invention, the number of claims, and the target jurisdictions. <span class="font-semibold text-primary">Speak to our sales team for a precise, obligation-free quote.</span>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-24 bg-surface relative overflow-hidden">
+  <div class="max-w-3xl mx-auto px-8 text-center">
+    <span class="material-symbols-outlined text-primary text-5xl mb-6 block" style="font-variation-settings:'FILL' 1;">lightbulb</span>
+    <h2 class="font-headline text-5xl text-primary mb-4">
+      Ready to Protect<br/><span class="serif-italic text-on-primary-fixed-variant">Your Invention?</span>
+    </h2>
+    <p class="text-on-surface-variant text-lg mb-10 leading-relaxed">
+      Message us on WhatsApp and one of our senior patent agents will get back to you within the hour. Your idea deserves protection — let's start today.
+    </p>
+    <a href="https://wa.me/60123252420" target="_blank"
+       class="inline-flex items-center gap-3 bg-primary text-on-primary px-10 py-5 rounded-xl text-lg font-semibold hover:bg-emerald-900 transition-all duration-300 active:scale-95 shadow-lg">
+      <svg fill="currentColor" height="22" width="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.438 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.301-.15-1.779-.877-2.055-.976-.275-.099-.476-.15-.675.15-.199.301-.771.976-.946 1.176-.175.199-.349.226-.651.075-.301-.15-1.272-.469-2.422-1.494-.894-.797-1.497-1.782-1.672-2.083-.175-.301-.019-.463.132-.613.135-.134.301-.351.451-.526.15-.175.199-.301.301-.501.101-.201.051-.376-.025-.526-.075-.15-.675-1.626-.925-2.227-.244-.589-.493-.509-.675-.519-.175-.01-.375-.01-.575-.01s-.525.075-.8.376c-.275.301-1.051 1.026-1.051 2.503 0 1.477 1.076 2.903 1.226 3.103.15.201 2.118 3.235 5.13 4.536.717.31 1.275.494 1.71.634.72.23 1.376.198 1.894.12.576-.088 1.779-.726 2.03-1.427.25-.7.25-1.302.175-1.427-.076-.126-.276-.201-.576-.351z"/></svg>
+      Talk to a Patent Agent
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-emerald-950 w-full border-t border-emerald-900/50">
+  <div class="max-w-7xl mx-auto px-8 md:px-12 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+    <div class="col-span-1">
+      <img alt="Teraju IP" class="h-12 w-auto object-contain mb-4" src="../assets/teraju-logo.png"/>
+      <p class="text-emerald-200/60 text-sm leading-relaxed mb-8">Crafting defensible intellectual assets. Our firm is founded on the principles of precision, foresight, and absolute integrity.</p>
+      <div class="flex gap-4">
+        <a href="mailto:admin@terajuip.com" class="material-symbols-outlined text-emerald-100 text-lg hover:text-emerald-300 transition-colors">mail</a>
+      </div>
+    </div>
+    <div>
+      <h6 class="text-emerald-50 font-bold mb-6 text-sm uppercase tracking-widest">Solutions</h6>
+      <ul class="space-y-4">
+        <li><a class="text-emerald-200/60 hover:text-emerald-100 hover:translate-x-1 transition-all inline-block text-sm" href="#">Patent Protection</a></li>
+        <li><a class="text-emerald-200/60 hover:text-emerald-100 hover:translate-x-1 transition-all inline-block text-sm" href="#">IP Monetization</a></li>
+        <li><a class="text-emerald-200/60 hover:text-emerald-100 hover:translate-x-1 transition-all inline-block text-sm" href="#">Copyright Certification</a></li>
+        <li><a class="text-emerald-200/60 hover:text-emerald-100 hover:translate-x-1 transition-all inline-block text-sm" href="#">Appeal to MyIPO Rejection</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6 class="text-emerald-50 font-bold mb-6 text-sm uppercase tracking-widest">Company</h6>
+      <ul class="space-y-4">
+        <li><a class="text-emerald-200/60 hover:text-emerald-100 hover:translate-x-1 transition-all inline-block text-sm" href="../about_us_desktop/">About Us</a></li>
+        <li><a class="text-emerald-200/60 hover:text-emerald-100 hover:translate-x-1 transition-all inline-block text-sm" href="../compare/">IP Comparison</a></li>
+        <li><a class="text-emerald-200/60 hover:text-emerald-100 hover:translate-x-1 transition-all inline-block text-sm" href="../contact/">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6 class="text-emerald-50 font-bold mb-6 text-sm uppercase tracking-widest">Legal</h6>
+      <ul class="space-y-4">
+        <li><a class="text-emerald-200/60 hover:text-emerald-100 hover:translate-x-1 transition-all inline-block text-sm" href="../privacy/">Privacy Policy</a></li>
+        <li><a class="text-emerald-200/60 hover:text-emerald-100 hover:translate-x-1 transition-all inline-block text-sm" href="../terms/">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-8 md:px-12 py-8 border-t border-emerald-900/30 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-emerald-200/40 text-xs">© 2024 Teraju IP Sdn Bhd. Protecting Intellectual Craft.</p>
+    <span class="text-emerald-200/40 text-xs uppercase tracking-tighter">Registered IP Agent Since 2015</span>
+  </div>
+</footer>
+
+<!-- Mobile Bottom Nav -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 bg-white border-t border-slate-100 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] z-50">
+  <a class="flex flex-col items-center justify-center text-emerald-900 bg-emerald-50/50 rounded-lg py-1 px-3 scale-95" href="../home_screen/">
+    <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">verified</span>
+    <span class="font-sans text-[10px] uppercase tracking-widest font-semibold mt-1">Services</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-slate-400 hover:text-emerald-700 transition-colors" href="../about_us/">
+    <span class="material-symbols-outlined">info</span>
+    <span class="font-sans text-[10px] uppercase tracking-widest font-semibold mt-1">About</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-slate-400 hover:text-emerald-700 transition-colors" href="../compare/">
+    <span class="material-symbols-outlined">balance</span>
+    <span class="font-sans text-[10px] uppercase tracking-widest font-semibold mt-1">Compare</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-slate-400 hover:text-emerald-700 transition-colors" href="../contact/">
+    <span class="material-symbols-outlined">chat</span>
+    <span class="font-sans text-[10px] uppercase tracking-widest font-semibold mt-1">Contact</span>
+  </a>
+</nav>
+
+<!-- WhatsApp FAB -->
+<a class="fixed bottom-24 right-6 md:bottom-8 md:right-8 z-[100] bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform active:scale-95 flex items-center justify-center" href="https://wa.me/60123252420" target="_blank">
+  <svg fill="currentColor" height="28" width="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.438 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.301-.15-1.779-.877-2.055-.976-.275-.099-.476-.15-.675.15-.199.301-.771.976-.946 1.176-.175.199-.349.226-.651.075-.301-.15-1.272-.469-2.422-1.494-.894-.797-1.497-1.782-1.672-2.083-.175-.301-.019-.463.132-.613.135-.134.301-.351.451-.526.15-.175.199-.301.301-.501.101-.201.051-.376-.025-.526-.075-.15-.675-1.626-.925-2.227-.244-.589-.493-.509-.675-.519-.175-.01-.375-.01-.575-.01s-.525.075-.8.376c-.275.301-1.051 1.026-1.051 2.503 0 1.477 1.076 2.903 1.226 3.103.15.201 2.118 3.235 5.13 4.536.717.31 1.275.494 1.71.634.72.23 1.376.198 1.894.12.576-.088 1.779-.726 2.03-1.427.25-.7.25-1.302.175-1.427-.076-.126-.276-.201-.576-.351z"/></svg>
+</a>
+
+</body>
+</html>

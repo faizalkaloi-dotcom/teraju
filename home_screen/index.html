@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#edf1fa",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#b7ede4",
+                    "background": "#f8f9ff",
+                    "tertiary-container": "#553c00",
+                    "primary-fixed-dim": "#9bd1c8",
+                    "on-primary-container": "#81b6ae",
+                    "on-secondary": "#ffffff",
+                    "surface": "#f8f9ff",
+                    "on-surface": "#171c22",
+                    "secondary-fixed-dim": "#aec7f7",
+                    "on-primary": "#ffffff",
+                    "primary": "#00302c",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#eaeef7",
+                    "on-background": "#171c22",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed": "#261900",
+                    "surface-variant": "#dee3eb",
+                    "on-primary-fixed": "#00201d",
+                    "outline": "#707977",
+                    "on-tertiary-container": "#cca75f",
+                    "on-primary-fixed-variant": "#174f49",
+                    "surface-container-high": "#e4e8f1",
+                    "surface-bright": "#f8f9ff",
+                    "on-secondary-fixed-variant": "#2e476f",
+                    "secondary-container": "#b6d0ff",
+                    "tertiary-fixed": "#ffdea5",
+                    "primary-container": "#0d4842",
+                    "on-secondary-fixed": "#001b3d",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "surface-container-low": "#f0f4fd",
+                    "inverse-surface": "#2c3137",
+                    "inverse-primary": "#9bd1c8",
+                    "on-secondary-container": "#3f5881",
+                    "surface-dim": "#d6dae3",
+                    "surface-container-highest": "#dee3eb",
+                    "secondary": "#465f88",
+                    "surface-tint": "#326760",
+                    "outline-variant": "#bfc8c6",
+                    "tertiary": "#392700",
+                    "secondary-fixed": "#d6e3ff",
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "on-surface-variant": "#404947"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .newsreader { font-family: 'Newsreader', serif; }
+        .inter { font-family: 'Inter', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-tertiary-fixed selection:text-tertiary">
+<!-- TopAppBar -->
+<header class="bg-slate-50/60 dark:bg-slate-950/60 backdrop-blur-md border-b border-emerald-900/10 dark:border-emerald-500/10 docked full-width top-0 sticky z-50 shadow-sm dark:shadow-none transition-all duration-300 ease-in-out">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-emerald-900 dark:text-emerald-500">menu</span>
+<img alt="Teraju IP" class="h-10 w-auto object-contain" src="../assets/teraju-logo.png"/>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-emerald-900 dark:text-emerald-400 font-bold inter text-sm uppercase tracking-wider" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 px-3 py-1 rounded transition-colors inter text-sm uppercase tracking-wider" href="../about_us/">About</a>
+<a class="text-slate-600 dark:text-slate-400 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 px-3 py-1 rounded transition-colors inter text-sm uppercase tracking-wider" href="../compare/">Compare</a>
+<a class="text-slate-600 dark:text-slate-400 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 px-3 py-1 rounded transition-colors inter text-sm uppercase tracking-wider" href="../contact/">Contact</a>
+</nav>
+<a href="https://wa.me/60123252420" target="_blank" class="bg-primary text-on-primary px-5 py-2 rounded-lg font-medium text-sm transition-all hover:opacity-90 active:scale-95">
+                Free Consultation
+            </a>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[751px] flex items-center overflow-hidden bg-primary">
+<div class="absolute inset-0 opacity-40">
+<img class="w-full h-full object-cover" data-alt="minimalist architectural detail with clean lines and soft shadows in deep emerald and slate tones reflecting stability and protection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCG7jilb7fnwRh4U7NSUvl5NrZFLTJGv9Ee-Zr6eGq2FMDNwEWOCPOfBUjyu4MomMAyzFlb7BZo17QlmuwgXxHvpX2KFrqw1FSNLm3uPWRHtpi2CeRw_60ty_wnzzs4VBwHxKB6YdcL1T-3ZUydbHS7mJgSI_Bx0rK00-wWBkFaBwf-7Le72K7w8iSWDndYeVi_DFtEujRrR03_zfe0LAXc9zJNNQaKJBIGyYNWGUa5j0LHNkEdulVafZTSuxCbBLVFyAmZXIPRgM"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
+</div>
+<div class="relative max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-900/40 border border-emerald-500/20 text-primary-fixed mb-8">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="inter text-[10px] uppercase tracking-[0.2em] font-bold">Within 1 hour response time</span>
+</div>
+<h1 class="text-5xl md:text-7xl newsreader italic font-bold text-on-primary leading-tight mb-6">
+                        Think it.<br/>Patent it.
+                    </h1>
+<p class="text-lg text-primary-fixed-dim inter max-w-lg mb-10 leading-relaxed">
+                        Secure your intellectual heritage with Malaysia's premier IP atelier. We transform your innovative sparks into legally fortified assets.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-tertiary-fixed text-on-tertiary-fixed px-8 py-4 rounded-lg font-bold inter transition-all hover:scale-105 active:scale-95 shadow-lg shadow-tertiary/20">
+                            Secure My IP Now
+                        </button>
+<button class="border border-primary-fixed/30 text-primary-fixed px-8 py-4 rounded-lg font-medium inter transition-all hover:bg-primary-fixed/10">
+                            Explore Services
+                        </button>
+</div>
+</div>
+<div class="relative hidden md:block">
+<div class="aspect-square relative overflow-hidden border border-primary-fixed/10 shadow-2xl rounded-full">
+<img class="w-full h-full object-cover" data-alt="Professional portrait of Hazif Azlan, Director of IP Compliance" src="../assets/Azlan-new.png"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-xl shadow-2xl max-w-xs border border-outline-variant/10"><p class="newsreader italic text-primary text-xl font-bold mb-2">Hazif Azlan</p>
+<p class="inter text-xs text-outline uppercase tracking-widest font-semibold">Director of IP Compliance</p></div>
+</div>
+</div>
+</section>
+<!-- Experience Badge Section -->
+<section class="py-16 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-white rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 border border-emerald-900/5">
+<div class="flex-1">
+<h2 class="headline-md newsreader text-primary italic font-bold text-3xl mb-4">The Examiner's Edge</h2>
+<p class="inter text-on-surface-variant leading-relaxed max-w-xl">
+                            Our counsel is grounded in over <span class="font-bold text-primary">40+ collective years</span> of direct experience as MyIPO examiners. We don't just file applications; we navigate the internal logic of the registry.
+                        </p>
+</div>
+<div class="flex gap-12 text-center">
+<div>
+<p class="text-4xl font-bold newsreader text-primary">40+</p>
+<p class="inter text-[10px] uppercase tracking-widest text-outline">Years Exp</p>
+</div>
+<div class="w-[1px] h-12 bg-outline-variant opacity-20 hidden md:block"></div>
+<div>
+<p class="text-4xl font-bold newsreader text-primary">Ex-MyIPO</p>
+<p class="inter text-[10px] uppercase tracking-widest text-outline">Specialists</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Highlights (Bento Grid) -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="mb-16">
+<span class="label-md text-emerald-800 tracking-[0.3em] font-bold">CORE DOMAINS</span>
+<h2 class="text-4xl newsreader font-bold mt-4 italic">Intellectual Asset Portfolios</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Patent -->
+<div class="md:col-span-8 group relative overflow-hidden bg-white rounded-xl p-10 border border-emerald-900/5 transition-all hover:shadow-xl hover:shadow-emerald-900/5">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-4xl text-emerald-900 mb-6" data-icon="verified">verified</span>
+<h3 class="text-2xl newsreader font-bold italic mb-4">Patent Registration</h3>
+<p class="inter text-on-surface-variant max-w-md leading-relaxed">Utility innovations, chemical compositions, and mechanical breakthroughs protected by former examiners.</p>
+<a class="inline-flex items-center gap-2 mt-8 text-primary font-bold inter text-sm group-hover:gap-4 transition-all" href="#">
+                            Explore Patent Services <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 group-hover:opacity-20 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="detailed blueprint of a mechanical invention with technical annotations and precise lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCKam2xj3TBRa5t0qlMnDDzp9XRGxkn9I0Hwd00z31k7sr1J0DEmaW_Rk5_jpPBKKWSQx4J4-mgrzhs4kPiSCvEGivGpfaPDBuiENTlHWAqKhqvFr_8ncyQlOHTcrh5_IZkwGSmSoMC87E9uTyf1DrSN_WXLeiMIRJmTVX8-FU5wn6BRVDKRVY58wVI9ZZDl6vzSg3rxRTj0ItOm5vtb0dWdtKpli4BOa7bEYGz0WoT-JUBqhm4IaAjxKGjvUktLunH_WlHpHc1TA"/>
+</div>
+</div>
+<!-- Trademark -->
+<div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-10 flex flex-col justify-between transition-all hover:scale-[1.02]">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary-fixed mb-6" data-icon="balance">balance</span>
+<h3 class="text-2xl newsreader font-bold italic mb-4">Trademark</h3>
+<p class="inter text-primary-fixed-dim leading-relaxed">Protect your brand identity, logos, and market distinction.</p>
+</div>
+<button class="w-full py-4 mt-8 bg-primary-container text-on-primary-container rounded-lg font-bold text-sm">Register Brand</button>
+</div>
+<!-- Copyright -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-10 flex flex-col justify-between border border-emerald-900/5">
+<div>
+<span class="material-symbols-outlined text-4xl text-emerald-900 mb-6" data-icon="info">info</span>
+<h3 class="text-2xl newsreader font-bold italic mb-4">Copyright</h3>
+<p class="inter text-on-surface-variant leading-relaxed">Securing literary works, software, music, and artistic expressions.</p>
+</div>
+<a class="mt-8 text-emerald-900 font-bold inter text-sm underline decoration-emerald-900/20 underline-offset-8" href="#">Learn More</a>
+</div>
+<!-- Industrial Design -->
+<div class="md:col-span-8 bg-white rounded-xl p-10 border border-emerald-900/5 grid md:grid-cols-2 gap-8 items-center transition-all hover:shadow-xl">
+<div class="order-2 md:order-1">
+<span class="material-symbols-outlined text-4xl text-emerald-900 mb-6" data-icon="chat">chat</span>
+<h3 class="text-2xl newsreader font-bold italic mb-4">Industrial Design</h3>
+<p class="inter text-on-surface-variant leading-relaxed">Preserving the aesthetic uniqueness and functional form of your commercial products.</p>
+</div>
+<div class="order-1 md:order-2 rounded-lg overflow-hidden h-48">
+<img class="w-full h-full object-cover" data-alt="sleek modern product design silhouette with elegant curves and minimalist lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtO3ZJ8VXtFONk3KV6FmKRhTIx-87xzrm9XQ3sbp2Flm6E5FKt0mSRQnBv1iCbP8X3KQJQD7IVBo5xEMikJBdrEP3ryOgvlN2c2JfM-mYtVfu1QI9qJS9DxvzrmD1xUrIZsW8IgEu1RC10sjMBO4tRriPsvbB07NDzxzfAPXRnCALq2cbeDLnjN1GLiHkhUbEtkDb6j9doIaaaX-4XwKvl-p5F4CgOMZkVibcwBd6dY0ooNj7Gpdrrf61-z79ITNB5Qi9uC0zweeo"/>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 bg-surface-container-highest relative overflow-hidden">
+<div class="absolute -right-24 -top-24 w-96 h-96 bg-emerald-900/5 rounded-full blur-3xl"></div>
+<div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+<h2 class="text-4xl newsreader font-bold italic mb-8">Your innovation deserves the expertise of former examiners.</h2>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6">
+<a class="w-full md:w-auto bg-primary text-on-primary px-12 py-5 rounded-lg font-bold text-lg flex items-center justify-center gap-3" href="https://wa.me/60123252420">
+<span class="material-symbols-outlined">chat</span>
+                        Consult with an Expert
+                    </a>
+<p class="inter text-on-surface-variant text-sm font-medium">Average response time: <span class="text-primary font-bold">48 minutes</span></p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="rounded-2xl overflow-hidden shadow-2xl h-[400px]">
+<img alt="Teraju IP Office Building" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ugOX9vJJ1bjiYWK3vlQm0hp4jLaji35Kbi5wrbK7XDWhAqllIbLI3Zu9DzgHfGoI1fRhGmbkMuR8RXBGq85aiP4KX73AHNDWgboqhwCPdOwoXKpYpn97pHe51tNvHq0x_9k6fDvBDnwPCFaQg3hOmzAiXw4x23XKTaF_XlvS_vtxa8sIA3Y_huzr63GyYiuw_hI80-CkhTD9sWgnXu-x_dgLn2iDzQM4DI8VUuN1PoaXoh1_DozHfLtW3ZJuqzVxh8JliEIJUw8-A"/>
+</div>
+<div>
+<span class="label-md text-emerald-800 tracking-[0.3em] font-bold uppercase">Our Presence</span>
+<h2 class="text-4xl newsreader font-bold mt-4 mb-6 italic">Headquartered in Kajang</h2>
+<p class="inter text-on-surface-variant leading-relaxed mb-8">
+          Our physical presence reflects our commitment to stability and professional excellence. Visit us at our main administrative hub where we manage intellectual property portfolios for clients nationwide.
+        </p>
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined">location_on</span>
+<span class="inter font-medium">Dataran Jade 2, Kajang, Selangor</span>
+</div>
+</div>
+</div>
+</div>
+</section><footer class="tonal-shift bg-slate-100 dark:bg-slate-900 w-full relative">
+<div class="w-full px-8 py-12 flex flex-col gap-8 max-w-7xl mx-auto mb-20 md:mb-0">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="flex flex-col gap-4">
+<img alt="Teraju IP" class="h-16 w-16 mb-2 object-contain" src="../assets/teraju-logo.png"/>
+<p class="font-sans inter text-sm leading-relaxed text-slate-500">
+                        Pioneering intellectual property protection with the precision of former examiners.
+                    </p>
+</div>
+<div class="flex flex-col gap-4">
+<span class="label-md text-primary font-bold tracking-widest uppercase">Location</span>
+<a class="font-sans inter text-sm leading-relaxed text-slate-500 hover:text-emerald-800 transition-colors" href="#">
+                        NO. 7-2, JALAN DATARAN JADE 2,<br/>43300 Kajang, Selangor
+                    </a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="label-md text-primary font-bold tracking-widest uppercase">Resources</span>
+<nav class="flex flex-col gap-2">
+<a class="font-sans inter text-sm text-slate-500 hover:text-emerald-800 transition-colors" href="#">Success Stats</a>
+<a class="font-sans inter text-sm text-slate-500 hover:text-emerald-800 transition-colors" href="#">Quick Links</a>
+<a class="font-sans inter text-sm text-slate-500 hover:text-emerald-800 transition-colors" href="#">Client Portal</a>
+</nav>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-sans inter text-sm text-slate-500">© 2024 Teraju IP Sdn Bhd. All rights reserved.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-slate-400">shield</span>
+<span class="material-symbols-outlined text-slate-400">gavel</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<div class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 z-50 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+<a class="flex flex-col items-center justify-center text-emerald-900 dark:text-emerald-400 bg-emerald-50/50 dark:bg-emerald-900/30 rounded-lg py-1 px-3 scale-95 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-sans inter text-[10px] uppercase tracking-widest font-semibold mt-1">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:text-emerald-700 transition-colors" href="../about_us/">
+<span class="material-symbols-outlined">info</span>
+<span class="font-sans inter text-[10px] uppercase tracking-widest font-semibold mt-1">About</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:text-emerald-700 transition-colors" href="../compare/">
+<span class="material-symbols-outlined">balance</span>
+<span class="font-sans inter text-[10px] uppercase tracking-widest font-semibold mt-1">Compare</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:text-emerald-700 transition-colors" href="../contact/">
+<span class="material-symbols-outlined">chat</span>
+<span class="font-sans inter text-[10px] uppercase tracking-widest font-semibold mt-1">Contact</span>
+</a>
+</div>
+<!-- WhatsApp FAB -->
+<a class="fixed bottom-24 right-6 md:bottom-10 md:right-10 z-[60] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all flex items-center justify-center" href="https://wa.me/60123252420" target="_blank">
+<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+</svg>
+</a>
+</body></html>

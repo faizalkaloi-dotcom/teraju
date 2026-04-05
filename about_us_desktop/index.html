@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#00302c",
+                    "secondary-fixed": "#d6e3ff",
+                    "inverse-on-surface": "#edf1fa",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-container": "#3f5881",
+                    "outline-variant": "#bfc8c6",
+                    "surface-variant": "#dee3eb",
+                    "on-secondary-fixed": "#001b3d",
+                    "on-primary-container": "#81b6ae",
+                    "surface-tint": "#326760",
+                    "secondary-fixed-dim": "#aec7f7",
+                    "on-primary": "#ffffff",
+                    "surface-dim": "#d6dae3",
+                    "surface-container-highest": "#dee3eb",
+                    "tertiary-container": "#553c00",
+                    "tertiary-fixed": "#ffdea5",
+                    "on-surface": "#171c22",
+                    "on-secondary": "#ffffff",
+                    "surface-container-high": "#e4e8f1",
+                    "inverse-surface": "#2c3137",
+                    "tertiary": "#392700",
+                    "error": "#ba1a1a",
+                    "on-background": "#171c22",
+                    "on-primary-fixed": "#00201d",
+                    "on-primary-fixed-variant": "#174f49",
+                    "primary-container": "#0d4842",
+                    "error-container": "#ffdad6",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#f8f9ff",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#9bd1c8",
+                    "primary-fixed": "#b7ede4",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "surface": "#f8f9ff",
+                    "primary-fixed-dim": "#9bd1c8",
+                    "on-tertiary-container": "#cca75f",
+                    "on-secondary-fixed-variant": "#2e476f",
+                    "surface-container-low": "#f0f4fd",
+                    "secondary": "#465f88",
+                    "on-surface-variant": "#404947",
+                    "surface-container": "#eaeef7",
+                    "secondary-container": "#b6d0ff",
+                    "outline": "#707977",
+                    "on-tertiary-fixed": "#261900",
+                    "on-tertiary": "#ffffff",
+                    "background": "#f8f9ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": [
+                            "Newsreader"
+                    ],
+                    "body": [
+                            "Inter"
+                    ],
+                    "label": [
+                            "Inter"
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .font-serif { font-family: 'Newsreader', serif; }
+        .newsreader { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-emerald-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20 w-full">
+<div class="font-serif newsreader text-emerald-950 dark:text-emerald-50"><img alt="Teraju IP Logo" class="h-12 w-auto" src="../assets/teraju-logo.png"/></div>
+<div class="hidden md:flex items-center space-x-10 font-serif newsreader italic text-lg tracking-tight">
+<a class="text-emerald-800/70 dark:text-emerald-200/70 hover:text-emerald-950 dark:hover:text-emerald-50 transition-colors" href="../home_screen_desktop/">Services</a>
+<a class="text-emerald-900 dark:text-emerald-100 border-b-2 border-emerald-800 dark:border-emerald-400 pb-1" href="#">About</a>
+<a class="text-emerald-800/70 dark:text-emerald-200/70 hover:text-emerald-950 dark:hover:text-emerald-50 transition-colors" href="../compare/">Compare</a>
+<a class="text-emerald-800/70 dark:text-emerald-200/70 hover:text-emerald-950 dark:hover:text-emerald-50 transition-colors" href="../contact/">Contact</a>
+</div>
+<a href="https://wa.me/60123252420" target="_blank" class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-body text-sm font-semibold hover:bg-emerald-900 hover:text-white transition-all duration-300 active:opacity-80 active:scale-95">
+                Free Consultation
+            </a>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-40 pb-24 overflow-hidden bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="max-w-3xl">
+<div class="inline-flex items-center space-x-2 text-on-tertiary-fixed-variant bg-tertiary-fixed/30 px-3 py-1 rounded-full mb-6">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="text-[0.65rem] font-bold tracking-[0.1em] uppercase font-label">Our Legacy</span>
+</div>
+<h1 class="font-serif text-6xl md:text-7xl text-primary leading-[1.1] mb-8">
+                    The Masters <br/>Behind <span class="italic">the Craft</span>.
+                </h1>
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-xl">
+                    Intellectual Property is more than a legal filing—it is a meticulous art. At Teraju IP, we bring decades of regulatory precision and creative foresight to protect your most valuable ideas.
+                </p>
+</div>
+</div>
+<!-- Decorative subtle element -->
+<div class="absolute right-[-10%] top-[20%] w-[600px] h-[600px] bg-primary/5 rounded-full blur-[100px] -z-10"></div>
+</header>
+<!-- Masters Profiles Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<!-- Faizal Ismail -->
+<div class="group relative">
+<div class="aspect-[4/5] overflow-hidden rounded-xl border border-outline-variant/20 shadow-2xl relative">
+<img class="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 transition-all duration-700" data-alt="Professional portrait of Faizal Ismail, Principal IP Architect" src="https://lh3.googleusercontent.com/aida/ADBb0uhrX4i_jnq4bPxQdRGDDwcdWMGReSzmyDHzlifiaii08mdrkBV3xSMsuRDWkq0z4IbFeUdDUwRc290dS8G4hSBLN69jUZOzzUMqnSnG5ceKZ1GL_DYrLYyp6pPQblicSuv1DT_Q3SrH9yhuJrLcR29ptMNiIZOw-jiI_SD4dKYOK94XLHGt_dq3Z2qyf2zGkmNZnetkjF8mkTd8PorJvnX_u5KWKG1dolHg4h6RQ5W2wHk2CmUO2EwPZqFPexAiN9lkQG2rFzSS-w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8 text-white">
+<h2 class="font-serif text-4xl mb-1">Faizal Ismail</h2>
+<p class="font-label text-xs tracking-widest text-primary-fixed uppercase">Principal IP Architect</p>
+</div>
+</div>
+<div class="mt-8 bg-surface-container-lowest p-8 rounded-xl shadow-sm -mt-16 relative z-10 mx-6">
+<div class="flex items-center space-x-4 mb-6">
+<div class="p-3 bg-tertiary-fixed rounded-lg text-on-tertiary-fixed">
+<span class="material-symbols-outlined">history_edu</span>
+</div>
+<p class="text-sm font-semibold text-primary">Senior Regulatory Strategist</p>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-center py-3 border-b border-outline-variant/10">
+<span class="text-on-surface-variant">IP Experience</span>
+<span class="font-serif italic text-xl">23 Years</span>
+</div>
+<div class="flex justify-between items-center py-3">
+<span class="text-on-surface-variant">MyIPO Examiner Tenure</span>
+<span class="font-serif italic text-xl text-primary">13 Years</span>
+</div>
+</div>
+<p class="mt-6 text-sm text-on-surface-variant leading-relaxed italic">
+                            "True protection begins with understanding the examiner's pen. I bridge the gap between innovation and administrative approval."
+                        </p>
+</div>
+</div>
+<!-- Hazif Azlan -->
+<div class="group relative">
+<div class="aspect-[4/5] overflow-hidden rounded-xl border border-outline-variant/20 shadow-2xl relative">
+<img class="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 transition-all duration-700" data-alt="Professional portrait of Hazif Azlan, Director of IP Compliance, in a suit and tie." src="../assets/Azlan-new.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8 text-white">
+<h2 class="font-serif text-4xl mb-1">Hazif Azlan</h2>
+<p class="font-label text-xs tracking-widest text-primary-fixed uppercase">Director of IP Compliance</p>
+</div>
+</div>
+<div class="mt-8 bg-surface-container-lowest p-8 rounded-xl shadow-sm -mt-16 relative z-10 mx-6">
+<div class="flex items-center space-x-4 mb-6">
+<div class="p-3 bg-tertiary-fixed rounded-lg text-on-tertiary-fixed">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<p class="text-sm font-semibold text-primary">Compliance Specialist</p>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-center py-3 border-b border-outline-variant/10">
+<span class="text-on-surface-variant">IP Experience</span>
+<span class="font-serif italic text-xl">20 Years</span>
+</div>
+<div class="flex justify-between items-center py-3">
+<span class="text-on-surface-variant">MyIPO Examiner Tenure</span>
+<span class="font-serif italic text-xl text-primary">10 Years</span>
+</div>
+</div>
+<p class="mt-6 text-sm text-on-surface-variant leading-relaxed italic">
+                            "Precision in documentation is the shield of intellectual craft. We don't just file; we fortify your heritage."
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-24 bg-primary text-on-primary">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+<div>
+<div class="font-serif text-6xl text-tertiary-fixed mb-2">40+</div>
+<div class="font-label text-xs tracking-widest uppercase opacity-70">Collective Years Experience</div>
+</div>
+<div>
+<div class="font-serif text-6xl text-tertiary-fixed mb-2">23+</div>
+<div class="font-label text-xs tracking-widest uppercase opacity-70">Years as MyIPO Examiners</div>
+</div>
+<div>
+<div class="font-serif text-6xl text-tertiary-fixed mb-2">1.5k</div>
+<div class="font-label text-xs tracking-widest uppercase opacity-70">IP Protected</div>
+</div>
+<div>
+<div class="font-serif text-6xl text-tertiary-fixed mb-2">98%</div>
+<div class="font-label text-xs tracking-widest uppercase opacity-70">Registration Success Rate</div>
+</div>
+</div>
+</section>
+<!-- The Team & Values Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col lg:flex-row gap-20 items-center">
+<div class="lg:w-1/2">
+<h2 class="font-serif text-5xl text-primary mb-8">A Strong and Dedicated Team</h2>
+<p class="text-on-surface-variant leading-relaxed mb-12 text-lg">
+                        Beyond our principals, Teraju IP is powered by a multidisciplinary ensemble of legal researchers, technical writers, and administrative experts. We operate like an intellectual atelier, where every file is handled with individual care and collective wisdom.
+                    </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="p-8 bg-surface-container-low rounded-xl border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">gavel</span>
+<h3 class="font-serif text-2xl text-primary mb-2">Ethical Guardianship</h3>
+<p class="text-sm text-on-surface-variant">We adhere to the highest standards of legal ethics, ensuring your ideas are guarded with integrity and transparency.</p>
+</div>
+<div class="p-8 bg-surface-container-low rounded-xl border-l-4 border-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">group_work</span>
+<h3 class="font-serif text-2xl text-primary mb-2">Collaborative Expertise</h3>
+<p class="text-sm text-on-surface-variant">Every case benefits from the collective insights of our entire senior team, not just a single associate.</p>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 grid grid-cols-2 gap-4">
+<img class="rounded-xl aspect-square object-cover" data-alt="Modern high-end law firm office interior, minimalist glass partitions, warm lighting, professional atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBELEtHjoGfexG8DywFLikwDDJe7eNPWXK0vSTGY7zD1VDGvYBEDFLLgIeO-a7W32AF7wEATNmCK4CR5pRDmsa_DJ3v3D_x_RYoqr6romN5BFMWVqeSKaRaefRZPI80WFz-6f87vZ7ZnvCi3CHL-m7lsEs5jDNWptk2PPRzkOj-TRf8RR8KPPz1fbp1Vcve545b0G3zOathHtUuOVQmIoTekJ_1wEyK8zYAduwHN_dOZi1SLxttto3v8CL2Wo4uKBcgSKo-GnZyZ6o"/>
+<img class="rounded-xl aspect-square object-cover mt-8" data-alt="Two professionals shaking hands in a bright sunlit office, symbolize trust and collaboration, soft focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBISbXbICHNzYf7rTwYLQ2MyEGCw0BfKX8FDArGUrvYdmd9zSsz0-I8fNaATLt3ju9bI7tvqm6yJX7rZQjXqz1gUVDPt4bfAllid1YzMSQ0X7TE6EREIrtgDeKDIcpNI6N3JPdPGSyvkP4-JzQSwwiVE_FX2dwa0bAiLmdE7-gJ8QkEryoF03_BsscRvAZ_6MUSbx2rpvL74TFKlALjj-xQdWpZ8KgleVxzG_JfwhJpmGlA9bjCmUJXhvaQix9Zir-5575BGE1znyc"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-emerald-950 dark:bg-slate-950 text-emerald-50 dark:text-emerald-100 border-t border-emerald-900/50">
+<div class="max-w-7xl mx-auto px-12 py-16 grid grid-cols-1 md:grid-cols-4 gap-12 font-sans inter font-normal text-sm leading-relaxed">
+<div class="space-y-6"><img alt="Teraju IP Logo" class="h-12 w-auto object-contain mb-4" src="../assets/teraju-logo.png"/>
+<div class="font-serif newsreader text-xl font-semibold text-emerald-100">Teraju IP</div>
+<p class="text-emerald-200/60 leading-loose">
+                    Defining the standards of Intellectual Property protection in Malaysia through scholarly expertise and regulatory precision.
+                </p>
+</div>
+<div>
+<h4 class="font-label text-xs uppercase tracking-widest text-emerald-100 mb-6 font-bold">Solutions</h4>
+<ul class="space-y-4">
+<li><a class="text-emerald-200/60 hover:text-emerald-100 hover:translate-x-1 transition-all duration-200 inline-block" href="#">Trademark Registration</a></li>
+<li><a class="text-emerald-200/60 hover:text-emerald-100 hover:translate-x-1 transition-all duration-200 inline-block" href="../patent/">Patent Protection</a></li>
+<li><a class="text-emerald-200/60 hover:text-emerald-100 hover:translate-x-1 transition-all duration-200 inline-block" href="#">Copyright Filing</a></li>
+<li><a class="text-emerald-200/60 hover:text-emerald-100 hover:translate-x-1 transition-all duration-200 inline-block" href="#">Industrial Design</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-xs uppercase tracking-widest text-emerald-100 mb-6 font-bold">Company</h4>
+<ul class="space-y-4">
+<li><a class="text-emerald-200/60 hover:text-emerald-100 hover:translate-x-1 transition-all duration-200 inline-block" href="#">About Us</a></li>
+<li><a class="text-emerald-200/60 hover:text-emerald-100 hover:translate-x-1 transition-all duration-200 inline-block" href="#">Case Studies</a></li>
+<li><a class="text-emerald-200/60 hover:text-emerald-100 hover:translate-x-1 transition-all duration-200 inline-block" href="../privacy/">Privacy Policy</a></li>
+<li><a class="text-emerald-200/60 hover:text-emerald-100 hover:translate-x-1 transition-all duration-200 inline-block" href="../terms/">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-xs uppercase tracking-widest text-emerald-100 mb-6 font-bold">Contact</h4>
+<ul class="space-y-4 text-emerald-200/60">
+<li>Kuala Lumpur, Malaysia</li>
+<li>contact@terajuip.com</li>
+<li>+60 3-XXXX XXXX</li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 py-8 border-t border-emerald-900/30 text-center">
+<p class="text-emerald-200/40 text-xs uppercase tracking-widest">© 2024 Teraju IP Sdn Bhd. Protecting Intellectual Craft.</p>
+</div>
+</footer>
+<!-- WhatsApp Floating Button -->
+<a class="fixed bottom-8 right-8 z-[100] bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform active:scale-95 flex items-center justify-center" href="https://wa.me/60123456789" target="_blank">
+<svg fill="currentColor" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.438 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.301-.15-1.779-.877-2.055-.976-.275-.099-.476-.15-.675.15-.199.301-.771.976-.946 1.176-.175.199-.349.226-.651.075-.301-.15-1.272-.469-2.422-1.494-.894-.797-1.497-1.782-1.672-2.083-.175-.301-.019-.463.132-.613.135-.134.301-.351.451-.526.15-.175.199-.301.301-.501.101-.201.051-.376-.025-.526-.075-.15-.675-1.626-.925-2.227-.244-.589-.493-.509-.675-.519-.175-.01-.375-.01-.575-.01s-.525.075-.8.376c-.275.301-1.051 1.026-1.051 2.503 0 1.477 1.076 2.903 1.226 3.103.15.201 2.118 3.235 5.13 4.536.717.31 1.275.494 1.71.634.72.23 1.376.198 1.894.12.576-.088 1.779-.726 2.03-1.427.25-.7.25-1.302.175-1.427-.076-.126-.276-.201-.576-.351z"></path></svg>
+</a>
+</body></html>
